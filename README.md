@@ -19,8 +19,8 @@ Prerequisite:
 JDK 1.8
 Maven 3.0+
 
-1.Checkout source code, cd into project folder.
-2.You can run the application from command line using ./mvnw spring-boot:run.
+1. Checkout source code, cd into project folder.
+2. You can run the application from command line using ./mvnw spring-boot:run.
 
 Or you can build the JAR file with ./mvnw clean package. Then you can run the JAR file:
 java -jar target/demo-0.0.1-SNAPSHOT.jar
