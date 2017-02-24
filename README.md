@@ -19,9 +19,11 @@ Prerequisite:
 JDK 1.8
 Maven 3.0+
 
-You can run the application from command line from project home folder using ./mvnw spring-boot:run.
+1.Checkout source code, cd into project folder.
+2.You can run the application from command line using ./mvnw spring-boot:run.
+
 Or you can build the JAR file with ./mvnw clean package. Then you can run the JAR file:
-java -jar target/gs-serving-web-content-0.1.0.jar
+java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 ##Test the App
 
