@@ -19,7 +19,8 @@ public class Insurance {
 
     //Constructor and getters/setters could be replaced by Lombok
 
-    public Insurance(String module, Double fromCoverageRange, String fromCoverageRangeLabel, Double toCoverageRange, String toCoverageRangeLabel, int risk) {
+    public Insurance(String module, Double fromCoverageRange, String fromCoverageRangeLabel,
+                     Double toCoverageRange, String toCoverageRangeLabel, int risk) {
         this.module = module;
         this.fromCoverageRange = fromCoverageRange;
         this.fromCoverageRangeLabel = fromCoverageRangeLabel;
