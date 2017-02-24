@@ -13,7 +13,7 @@ Sports Equipment (Coverage 0-20k, Risk 30%)
 The user should be able to select the coverage for each module.
 The price of the tariff, which is the individual configuration for each customer, should be calculated based on the risk.
 
-##How to run instructions:
+##How to run instructions
 
 Prerequisite:
 JDK 1.8
