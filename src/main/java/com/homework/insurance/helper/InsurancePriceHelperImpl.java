@@ -3,6 +3,7 @@ package com.homework.insurance.helper;
 import com.homework.insurance.model.Insurance;
 import org.apache.log4j.Logger;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 /**
@@ -33,14 +34,15 @@ public class InsurancePriceHelperImpl implements InsurancePriceHelper {
     }
 
     /**
-     * Builds price depending on the risk.
+     * Builds price depending on the risk and formats to 2 digits.
      *
      * @param selectedInsurance
      * @param coverage
      * @return price
      */
-    private Double buildPrice(final Insurance selectedInsurance, final String coverage) {
-        return Double.valueOf(coverage) * selectedInsurance.getRisk() / 1000;
+    private String buildPrice(final Insurance selectedInsurance, final String coverage) {
+        DecimalFormat df = new DecimalFormat("#.##");
+        return df.format(Double.valueOf(coverage) * selectedInsurance.getRisk() / 1000);
     }
 
     /**

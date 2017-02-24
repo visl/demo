@@ -33,6 +33,13 @@ public class InsurancePriceHelperImplTest {
     }
 
     @Test
+    public void generateResultSuccessLongFormat() throws Exception {
+        String result =  helper.generateResult(insurances, "Bike", "5.987");
+
+        assertEquals("For Bike insurance type and 5.987 coverage the price will be 0.18", result);
+    }
+
+    @Test
     public void invalidModule() throws Exception {
         String result =  helper.generateResult(insurances, "Car", "500");
 
