@@ -46,8 +46,8 @@ public class DemoController {
 
 
     @RequestMapping(name = "/insurance", method = RequestMethod.POST)
-    public String post(@RequestParam(value = "module", required = false, defaultValue = "Bike") String module,
-                       @RequestParam(value = "coverage", required = false, defaultValue = "500") String coverage,
+    public String post(@RequestParam(value = "module", required = false, defaultValue = "") String module,
+                       @RequestParam(value = "coverage", required = false, defaultValue = "") String coverage,
                        Model model) {
         model.addAttribute("insurances", insurances);
 
